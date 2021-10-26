@@ -74,9 +74,18 @@
   .socials-icon:hover {
     color: $orange;
   }
+
   .bottom-gradient {
     background: linear-gradient(180deg, #d66703 0%, #fd8517 100%);
   }
+  .net-gradient {
+    @apply h-full w-20 top-0  absolute bg-black;
+    background: linear-gradient(90deg, $orange 0%, transparent 100%);
+  }
+  .net-gradient.gradient-r {
+    background: linear-gradient(-90deg, $orange 0%, transparent 100%);
+  }
+
   @media (min-width: 1024px) {
   }
 

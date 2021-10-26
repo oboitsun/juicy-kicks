@@ -1,0 +1,62 @@
+@import "./variables.scss";
+#roadmap {
+  background: linear-gradient(180deg, #b65700 0%, #d66703 100%);
+  padding: 60px 0;
+  .roadmap-month {
+    color: black;
+    width: max-content;
+    line-height: 1;
+    display: block;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: 600;
+    font-size: clamp(40px, 15vw, 48px);
+  }
+  .roadmap-month > span {
+    font-size: 24px;
+  }
+  .month-1 {
+    top: 50%;
+  }
+  .month-5 {
+    color: white;
+  }
+  .month-heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+  }
+  .month-text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 34px;
+  }
+
+  @media (min-width: 1024px) {
+    .month-heading {
+      font-size: 16px;
+      line-height: 34px;
+    }
+    .month-text {
+      font-size: 14px;
+      line-height: 34px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    padding: 90px 0;
+    .month-heading {
+      font-size: 24px;
+      line-height: 34px;
+    }
+    .month-text {
+      font-size: 16px;
+      line-height: 34px;
+    }
+    .roadmap-month {
+      font-size: 48px;
+    }
+  }
+}

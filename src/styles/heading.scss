@@ -1,0 +1,11 @@
+.heading {
+  color: white;
+  font-weight: 900;
+  font-size: 32px;
+  @media (min-width: 1024px) {
+    font-size: 34px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 76px;
+  }
+}

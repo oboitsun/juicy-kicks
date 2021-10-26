@@ -1,0 +1,122 @@
+@import "./variables.scss";
+#hero-section {
+  overflow: hidden;
+  padding-top: 140px;
+  max-height: 854px;
+  display: flex;
+  background: linear-gradient(180deg, $dark-orange 0%, $orange 55%);
+  align-items: center;
+  .hero-section-net {
+    width: 200%;
+    top: 80%;
+    bottom: 0;
+    @apply absolute    left-1/2 transform -translate-x-1/2 overflow-hidden max-w-1440;
+    overflow: hidden;
+  }
+  .welcome-to {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .connect-wallet {
+    height: 74px;
+  }
+  .connect-wallet .btn {
+    font-size: 20px !important;
+  }
+  .title:first-child {
+    color: #fff;
+  }
+  .title {
+    line-height: 1;
+    color: white;
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+  .title-big {
+    color: $lime;
+    font-size: 45px;
+  }
+  .timer {
+    padding: 13px 19px;
+    width: 314px;
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+    place-content: center;
+  }
+
+  .timer-digits {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 64px;
+    text-align: center;
+  }
+  .timer-date {
+    font-size: 8px;
+    font-weight: 400;
+    color: white;
+    @media (min-width: 1024px) {
+      font-size: 10px;
+    }
+  }
+  .splash {
+    padding: 40px 0;
+    align-self: flex-end;
+    width: 100%;
+
+    display: block;
+  }
+  .burst {
+    top: 30%;
+    @apply absolute block w-screen -translate-y-1/2 left-1/2 transform -translate-x-1/2;
+    max-width: 1040px;
+  }
+  .net-gradient {
+    @apply h-full w-10 top-0  absolute bg-black;
+    background: linear-gradient(90deg, $orange 0%, transparent 100%);
+  }
+  .net-gradient.gradient-r {
+    background: linear-gradient(-90deg, $orange 0%, transparent 100%);
+  }
+  @media (min-width: 1024px) {
+    height: 854px;
+    .hero-section-net {
+      top: 65%;
+      width: 150%;
+    }
+    .splash {
+      align-self: flex-end;
+      width: 60%;
+      height: 100%;
+      display: block;
+    }
+    .welcome-to {
+      align-items: flex-start;
+      width: 40%;
+      max-width: 411px;
+    }
+
+    .title {
+      font-size: 34px;
+    }
+    .title-big {
+      font-size: 56px;
+    }
+    .connect-wallet {
+      max-width: 280px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .welcome-to {
+      max-width: 579px;
+    }
+    .title {
+      font-size: 46px;
+    }
+    .title-big {
+      font-size: 66px;
+    }
+  }
+}

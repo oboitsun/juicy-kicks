@@ -1,0 +1,22 @@
+.carousel2.swiper {
+  width: 60vw;
+
+  aspect-ratio: 1/1.26;
+  /* height: calc(60vw * 1.26); */
+}
+@media (min-width: 1024px) {
+  .carousel2.swiper {
+    width: 100%;
+
+    aspect-ratio: 1/1.26;
+    /* height: calc(60vw * 1.26); */
+  }
+}
+.carousel2 .swiper-slide {
+  padding: 14px;
+  padding-bottom: 0;
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+  border-radius: 10px;
+}

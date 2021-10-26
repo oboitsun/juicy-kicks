@@ -11,7 +11,7 @@ export default function AboutUs() {
         <div className="lg:w-1/2">
           <CarouselCards />
         </div>
-        <div className="lg:w-1/2 pt-10 lg:pt-0">
+        <div className="lg:w-1/2 pt-40 lg:pt-0">
           <Heading>
             About <br /> Juicy kicks
           </Heading>

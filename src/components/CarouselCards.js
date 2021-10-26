@@ -24,25 +24,49 @@ export default function CarouselCards() {
   });
   return (
     <>
-      <div class="container">
+      <div class="container pb-20">
         <div {...handlers} id="carousel" class="carousel">
           <div class="item a">
-            <img className="pointer-events-none" src="/imgs/card1.png" alt="card" />
+            <img
+              className="pointer-events-none block w-full"
+              src="/imgs/card1.png"
+              alt="card"
+            />
           </div>
           <div class="item b">
-            <img className="pointer-events-none" src="/imgs/card2.png" alt="card" />
+            <img
+              className="pointer-events-none block w-full"
+              src="/imgs/card2.png"
+              alt="card"
+            />
           </div>
           <div class="item c">
-            <img className="pointer-events-none" src="/imgs/card3.png" alt="card" />
+            <img
+              className="pointer-events-none block w-full"
+              src="/imgs/card3.png"
+              alt="card"
+            />
           </div>
           <div class="item d">
-            <img className="pointer-events-none" src="/imgs/card4.png" alt="card" />
+            <img
+              className="pointer-events-none block w-full"
+              src="/imgs/card4.png"
+              alt="card"
+            />
           </div>
           <div class="item e">
-            <img className="pointer-events-none" src="/imgs/card5.png" alt="card" />
+            <img
+              className="pointer-events-none block w-full"
+              src="/imgs/card5.png"
+              alt="card"
+            />
           </div>
           <div class="item f">
-            <img className="pointer-events-none" src="/imgs/card6.png" alt="card" />
+            <img
+              className="pointer-events-none block w-full"
+              src="/imgs/card6.png"
+              alt="card"
+            />
           </div>
         </div>
         <div

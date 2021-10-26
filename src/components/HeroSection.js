@@ -30,6 +30,22 @@ export default function HeroSection({
         src="/imgs/juicy-card.png"
         alt="card"
       />
+      <motion.img
+        animate={{
+          filter: ["blur(0px)", "blur(2px)"],
+          scale: [1.2, 0.9],
+          rotateX: [12, -47],
+          rotateY: [4, 67],
+          rotateZ: [2, 26],
+          skew: [0, 4],
+          top: ["75%", "78%"],
+          left: ["93%", "89%"],
+        }}
+        transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
+        className="absolute pointer-events-none top-1/4 left-1/3 transform rotate-12 w-20 z-10"
+        src="/imgs/juicy-card.png"
+        alt="card"
+      />
       <div className=" hero-section-net">
         <img className=" w-full absolute  object-cover " src="/imgs/bg.png" alt="bg" />
         <div className=" left-0 net-gradient"></div>

@@ -33,7 +33,12 @@
     font-weight: 500;
     line-height: 34px;
   }
-
+  .milestone img {
+    transition: all 0.5s;
+  }
+  .milestone:hover img {
+    transform: rotate(3deg) scale(1.05);
+  }
   @media (min-width: 1024px) {
     .month-heading {
       font-size: 16px;

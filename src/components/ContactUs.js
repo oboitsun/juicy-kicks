@@ -2,10 +2,17 @@ import React from "react";
 import Heading from "./Heading";
 import SubHeading from "./SubHeading";
 import "../styles/contact-us.scss";
+import Line from "./Line";
 export default function ContactUs() {
   return (
     <div id="contact-us">
-      <div className="my-container">
+      <div className="my-container relative">
+        <div className="w-1/2 lg:w-3/4 absolute top-0 left-3/4">
+          <Line />
+        </div>
+        <div className="w-1/2 lg:w-2/3 absolute top-10 left-3/4">
+          <Line delay={1} />
+        </div>
         <Heading>Get in touch</Heading>
         <SubHeading>
           Venenatis dignissim massa ac, sodales malesuada quam. Aliquam in fermentum

@@ -13,7 +13,23 @@ const faqs = [
 ];
 export default function FAQ() {
   return (
-    <div id="faq">
+    <div id="faq" className="relative">
+      <motion.img
+        animate={{
+          filter: ["blur(0px)", "blur(2px)"],
+          scale: [1.2, 0.9],
+          rotateX: [140, 7],
+          rotateY: [4, 147],
+          rotateZ: [6, 6],
+          skew: [0, 4],
+          top: ["-5%", "-6%"],
+          right: ["13%", "14%"],
+        }}
+        transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
+        className="absolute right-1/4 -top-1/4 w-1/12"
+        src="/imgs/juicy-card1.png"
+        alt="juicy-card"
+      />
       <div className="my-container flex flex-col">
         <Heading>FAQ'S</Heading>
         <div className="text-center lg:w-1/2 mx-auto">

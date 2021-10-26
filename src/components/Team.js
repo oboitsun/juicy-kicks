@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import SubHeading from "./SubHeading";
 import Heading from "./Heading";
+import Line from "./Line";
+import JuicyCard from "./JuicyCard";
 const team = [
   {
     src: "/imgs/team1.png",
@@ -57,9 +59,15 @@ export default function Team() {
   };
   return (
     <div id="team" className=" ">
-      <div className="my-container">
+      <div className="my-container relative">
         <Heading>team</Heading>
-
+        <div className="w-1/2 lg:w-1/4 absolute top-0 -left-1/4">
+          <Line />
+        </div>
+        <div className="w-1/2 lg:w-1/4 absolute top-10 -left-1/4">
+          <Line delay={1} />
+        </div>
+        <JuicyCard />
         <motion.div
           variants={cont}
           initial="hidden"

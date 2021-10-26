@@ -1,12 +1,28 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import Heading from "./Heading";
 import SubHeading from "./SubHeading";
 import "../styles/about-us.scss";
 import CarouselCards from "./CarouselCards";
 export default function AboutUs() {
   return (
-    <div id="about-us">
+    <div id="about-us" className="relative">
+      <motion.img
+        animate={{
+          filter: ["blur(0px)", "blur(2px)"],
+          scale: [1.2, 0.9],
+          rotateX: [140, 7],
+          rotateY: [4, 147],
+          rotateZ: [142, 6],
+          skew: [0, 4],
+          top: ["-5%", "-6%"],
+          right: ["13%", "14%"],
+        }}
+        transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
+        className="absolute right-1/4 -top-1/4 w-1/12"
+        src="/imgs/juicy-card1.png"
+        alt="juicy-card"
+      />
       <div className="my-container flex flex-col lg:flex-row items-center lg:gap-10 xl:gap-20">
         <div className="lg:w-1/2">
           <CarouselCards />

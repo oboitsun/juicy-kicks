@@ -1,7 +1,6 @@
 import React from "react";
 import "./../styles/roadmap.scss";
 import Heading from "./Heading";
-import NFTCarousel from "./NFTCarousel";
 
 const roadmap = [
   {

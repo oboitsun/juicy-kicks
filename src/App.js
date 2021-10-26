@@ -2,20 +2,15 @@ import React, { useState, useEffect } from "react";
 import FAQ from "./components/FAQ";
 import "./styles/common.scss";
 import HeroSection from "./components/HeroSection";
-import EndlessHamsters from "./components/EndlessHamsters";
 import Team from "./components/Team";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ModalMenu from "./components/ModalMenu";
 import ComingSoonPopUp from "./components/ComingSoonPopUp";
-
-import AboutHamsters from "./components/AboutHamsters";
 import Roadmap from "./components/Roadmap";
-import Ghost from "./components/Ghost";
-import Web from "./components/Web";
-import CardSection from "./components/CardSection";
 import ContactUs from "./components/ContactUs";
 import BottomSection from "./components/BottomSection";
+import AboutUs from "./components/AboutUs";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -89,12 +84,7 @@ export default function App() {
         connectWallet={connectWallet}
         userAddress={userAddress}
       />
-      {/* <CardSection /> */}
-      {/* <AboutHamsters /> */}
-      {/* <div className="relative">
-        <EndlessHamsters />
-        <Web />
-      </div> */}
+      <AboutUs />
 
       <Team />
       <Roadmap />

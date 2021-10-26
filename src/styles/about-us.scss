@@ -1,4 +1,17 @@
 #about-us {
+  background: linear-gradient(180deg, #ff8413 0%, #d37927 100%);
   padding-top: 100px;
   padding-bottom: 40px;
+  .heading,
+  .subheading {
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    padding-bottom: 100px;
+    .heading,
+    .subheading {
+      text-align: left;
+    }
+  }
 }

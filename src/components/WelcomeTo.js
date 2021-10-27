@@ -8,8 +8,7 @@ import ConnectWallet from "./ConnectWallet";
 export default function WelcomeTo({
   setShowPopup,
   showPopup,
-  connectStoic,
-  connectWallet,
+  setUserAddress,
   userAddress,
 }) {
   const cont = {
@@ -37,13 +36,22 @@ export default function WelcomeTo({
       <motion.div variants={item} key={4}>
         <Timer />
       </motion.div>
-      <motion.div variants={item} key={5} className="w-full connect-wallet z-20">
+      <motion.div
+        variants={item}
+        key={5}
+        className="w-full connect-wallet z-20 flex  items-center"
+      >
         <ConnectWallet
           showPopup={showPopup}
           setShowPopup={setShowPopup}
-          connectStoic={connectStoic}
-          connectWallet={connectWallet}
+          setUserAddress={setUserAddress}
           userAddress={userAddress}
+        />
+        <img
+          style={{ width: 64 }}
+          className="block ml-4 h-auto"
+          src="/imgs/dfinity-logo.png"
+          alt="dfinity-blockchain"
         />
       </motion.div>
     </motion.div>

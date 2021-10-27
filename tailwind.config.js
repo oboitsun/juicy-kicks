@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         lime: "#C9E606",
+        orange: "#ff8413",
       },
       maxWidth: {
         864: "864px",

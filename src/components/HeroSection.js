@@ -6,8 +6,7 @@ export default function HeroSection({
   showPopup,
   setShowPopup,
   userAddress,
-  connectStoic,
-  connectWallet,
+  setUserAddress,
 }) {
   return (
     <motion.div
@@ -60,11 +59,10 @@ export default function HeroSection({
         <WelcomeTo
           showPopup={showPopup}
           setShowPopup={setShowPopup}
-          connectStoic={connectStoic}
-          connectWallet={connectWallet}
+          setUserAddress={setUserAddress}
           userAddress={userAddress}
         />
-        <div className="relative z-10 splash ">
+        <div className="relative z-10 splash pointer-events-none">
           <img className="w-full relative z-10" src="/imgs/splash.png" alt="splash" />
           <div className="burst">
             <motion.img

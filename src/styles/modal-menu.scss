@@ -1,5 +1,6 @@
 @import "./variables.scss";
 .modal-menu {
+  background: linear-gradient(180deg, #ff8413 0%, #d37927 100%);
   z-index: 20;
   background-color: $dark-khaki;
   width: 100%;
@@ -11,6 +12,7 @@
   padding-top: 122px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 
   @media (min-width: 1024px) {

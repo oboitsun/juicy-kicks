@@ -11,8 +11,7 @@ export default function Header({
   showPopup,
   setShowPopup,
   userAddress,
-  connectWallet,
-  connectStoic,
+  setUserAddress,
   showMenu,
   setShowMenu,
   scrolled,
@@ -38,9 +37,9 @@ export default function Header({
     className: "anchor text-white ",
   };
   return (
-    <div id="header" className={` ${scrolled ? "bg-black py-3 shadow-lg" : "py-7"}`}>
+    <div id="header" className={` ${scrolled ? "bg-orange py-3 shadow-lg" : "py-7"}`}>
       <div className="my-container justify-between flex items-center">
-        <div>
+        <div className="w-1/4 lg:w-1/6">
           <Logo wide={false} />
         </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
@@ -53,10 +52,10 @@ export default function Header({
           <Socials />
           {rendered && (
             <ConnectWallet
+              header
               showPopup={showPopup}
               setShowPopup={setShowPopup}
-              connectStoic={connectStoic}
-              connectWallet={connectWallet}
+              setUserAddress={setUserAddress}
               userAddress={userAddress}
             />
           )}

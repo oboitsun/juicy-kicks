@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/hero-section.scss";
 import WelcomeTo from "./WelcomeTo";
 import { m, motion } from "framer-motion";
+import SplashCarousel from "./SplashCarousel";
 export default function HeroSection({
   showPopup,
   setShowPopup,
@@ -63,7 +64,7 @@ export default function HeroSection({
           userAddress={userAddress}
         />
         <div className="relative z-10 splash pointer-events-none">
-          <img className="w-full relative z-10" src="/imgs/splash.png" alt="splash" />
+          <SplashCarousel />
           <div className="burst">
             <motion.img
               animate={{

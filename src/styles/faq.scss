@@ -14,26 +14,37 @@
   .subheading {
     padding-bottom: 40px;
   }
+  .faq-item {
+    @apply flex w-full items-center justify-between p-4;
+    transition: all 0.3s;
+    text-align: center;
+  }
+  .faq-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
   .faq-question {
     max-width: 90%;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 22px;
-    text-align: left;
+    margin: 0 auto;
   }
   .arrow-down {
+    width: 20px;
     padding-left: 4px;
     filter: invert(1);
     transition: all 0.4s;
   }
   @media (min-width: 1024px) {
     padding-top: 30px;
-    .my-container {
-    }
-    .heading {
+    .faq-question {
+      font-size: 36px;
     }
     .subheading {
       padding-bottom: 40px;
+    }
+    .arrow-down {
+      width: 40px;
     }
   }
 

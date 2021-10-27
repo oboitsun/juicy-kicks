@@ -40,7 +40,7 @@ const roadmap = [
 export default function Roadmap() {
   const { ref, inView } = useInView({ threshold: 0.1 });
   const cont = {
-    show: { opacity: 1, transition: { staggerChildren: 0.5, delayChildren: 0.5 } },
+    show: { opacity: 1, transition: { staggerChildren: 0.2, delayChildren: 0.5 } },
     hidden: { opacity: 0 },
   };
   const item = {

@@ -12,14 +12,11 @@ export default function FaqItem({ qstn, answr }) {
   }
   return (
     <div className="lg:w-full text-white">
-      <div
-        onClick={toggleAccordion}
-        className="cursor-pointer flex w-full justify-between my-5 "
-      >
+      <div onClick={toggleAccordion} className="cursor-pointer faq-item ">
         <p className="faq-question  ">{qstn}</p>
         <img
           className={`arrow-down transform ${setActive ? "rotate-180" : "rotate-0"}`}
-          src="/imgs/arrow-down.svg"
+          src="/imgs/chevron-down-solid.svg"
           alt="expand"
         />
       </div>
@@ -30,7 +27,6 @@ export default function FaqItem({ qstn, answr }) {
       >
         <p className="pb-5">{answr}</p>
       </div>
-      <div className="faq-divider"></div>
     </div>
   );
 }

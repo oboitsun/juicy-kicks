@@ -38,9 +38,7 @@ export default function FAQ() {
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
           </SubHeading>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 w-full">
-          <div className="faq-divider"></div>
-          <div className="faq-divider hidden lg:block"></div>
+        <div className="grid grid-cols-1 gap-5 w-full">
           {faqs.map((f, i) => (
             <FaqItem key={i} {...f} />
           ))}

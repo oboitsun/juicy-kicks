@@ -37,7 +37,7 @@ const team = [
   },
 ];
 export default function Team() {
-  const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: true });
+  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
   const cont = {
     show: {
       transition: { duration: 0.3, staggerChildren: 0.1, delayChildren: 0.3 },

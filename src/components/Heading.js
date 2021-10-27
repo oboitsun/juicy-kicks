@@ -7,10 +7,8 @@ export default function Heading({ children }) {
   return (
     <motion.div
       ref={ref}
-      initial={{ color: "#000" }}
-      animate={
-        inView ? { scale: [1, 1.05, 1], color: ["#000", "#fff"] } : { color: "#000" }
-      }
+      initial={{ color: "#fff" }}
+      animate={inView ? { scale: [1, 1.05, 1] } : { color: "#fff" }}
       transition={{
         delay: 0.3,
         repeatDelay: 0.3,

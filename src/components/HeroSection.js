@@ -47,9 +47,13 @@ export default function HeroSection({
         alt="card"
       />
       <div className=" hero-section-net">
-        <img className=" w-full absolute  object-cover " src="/imgs/bg.png" alt="bg" />
-        <div className=" left-0 net-gradient"></div>
-        <div className="right-0  net-gradient gradient-r"></div>
+        <img
+          className=" w-full absolute  object-cover "
+          src="/imgs/bottom-bg.png"
+          alt="bg"
+        />
+        {/* <div className=" left-0 net-gradient"></div>
+        <div className="right-0  net-gradient gradient-r"></div> */}
       </div>
 
       <div className="my-container relative z-10  lg:flex lg:justify-between">

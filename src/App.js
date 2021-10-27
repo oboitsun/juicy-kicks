@@ -65,7 +65,11 @@ export default function App() {
   return (
     <div className=" relative overflow-hidden app">
       <div id="top"></div>
-
+      <img
+        className="w-full h-full fixed top-0 left-0 object-cover z-0"
+        src="/imgs/fixed-bg.jpg"
+        alt="fixed"
+      />
       <Header
         showPopup={showPopup}
         setShowPopup={setShowPopup}

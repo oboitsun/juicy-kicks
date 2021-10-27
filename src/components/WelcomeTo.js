@@ -37,7 +37,7 @@ export default function WelcomeTo({
       <motion.div variants={item} key={4}>
         <Timer />
       </motion.div>
-      <motion.div variants={item} key={5} className="w-full connect-wallet">
+      <motion.div variants={item} key={5} className="w-full connect-wallet z-20">
         <ConnectWallet
           showPopup={showPopup}
           setShowPopup={setShowPopup}

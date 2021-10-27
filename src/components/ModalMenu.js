@@ -66,6 +66,12 @@ export default function ModalMenu({ showMenu, setShowMenu }) {
       <motion.div key={12} className="  ">
         <Socials big modal />{" "}
       </motion.div>
+      <img
+        style={{ width: 64 }}
+        className="block mx-auto"
+        src="/imgs/dfinity-logo.png"
+        alt="dfinity-blockchain"
+      />
     </motion.div>
   );
 }

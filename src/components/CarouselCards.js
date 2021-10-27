@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/cardsCarousel.scss";
 import { useSwipeable } from "react-swipeable";
 export default function CarouselCards() {
@@ -6,7 +6,7 @@ export default function CarouselCards() {
     currdeg = 0;
   const next = document.querySelector(".next");
   const prev = document.querySelector(".prev");
-
+  const [curr_interval, setCurrInterval] = useState(null);
   function rotate(e) {
     if (e === "n") {
       currdeg = currdeg - 60;
@@ -22,6 +22,13 @@ export default function CarouselCards() {
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
+  useEffect(() => {
+    setInterval(() => {
+      carousel && rotate("n");
+    }, 2000);
+    // setCurrInterval(interval);
+    // return clearInterval(curr_interval);
+  }, [carousel]);
   return (
     <>
       <div class="container pb-20">
@@ -69,7 +76,7 @@ export default function CarouselCards() {
             />
           </div>
         </div>
-        <div
+        {/* <div
           onClick={() => {
             rotate("n");
           }}
@@ -84,7 +91,7 @@ export default function CarouselCards() {
           class="prev"
         >
           Prev
-        </div>
+        </div> */}
       </div>
     </>
   );

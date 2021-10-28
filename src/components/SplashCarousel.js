@@ -23,7 +23,7 @@ export default function SplashCarousel() {
       >
         {splash_array.map((slide, i) => (
           <SwiperSlide key={i}>
-            <img className="w-full relative z-10" src={slide} alt="splash" />
+            <img className="w-full relative z-10 px-4" src={slide} alt="splash" />
           </SwiperSlide>
         ))}
       </Swiper>

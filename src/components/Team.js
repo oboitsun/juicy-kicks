@@ -60,6 +60,38 @@ export default function Team() {
   return (
     <div id="team" className=" ">
       <div className="my-container relative">
+        <motion.img
+          animate={{
+            filter: ["blur(0px)", "blur(2px)"],
+            scale: [1.2, 0.9],
+            rotateX: [12, -47],
+            rotateY: [4, 67],
+            rotateZ: [2, 26],
+            skew: [0, 4],
+            top: ["15%", "18%"],
+            left: ["13%", "9%"],
+          }}
+          transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
+          className="absolute pointer-events-none top-1/4 left-1/3 transform rotate-12 w-20 z-10"
+          src="/imgs/blueberry.png"
+          alt="card"
+        />
+        <motion.img
+          animate={{
+            filter: ["blur(0px)", "blur(2px)"],
+            scale: [1.2, 0.9],
+            rotateX: [12, -47],
+            rotateY: [4, 67],
+            rotateZ: [2, 26],
+            skew: [0, 4],
+            top: ["95%", "98%"],
+            left: ["83%", "89%"],
+          }}
+          transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
+          className="absolute pointer-events-none top-1/4 left-1/3 transform rotate-12 w-20 z-10"
+          src="/imgs/fig.png"
+          alt="card"
+        />
         <Heading>team</Heading>
         <div className="w-1/2 lg:w-1/4 absolute top-0 -left-1/4">
           <Line />

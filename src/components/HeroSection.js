@@ -3,6 +3,7 @@ import "../styles/hero-section.scss";
 import WelcomeTo from "./WelcomeTo";
 import { m, motion } from "framer-motion";
 import SplashCarousel from "./SplashCarousel";
+import Cards1Back from "./Cards1Back";
 export default function HeroSection({
   showPopup,
   setShowPopup,
@@ -14,22 +15,8 @@ export default function HeroSection({
       id="hero-section"
       className="relative overflow-hidden flex flex-col lg:flex-row items-center lg:justify-end"
     >
-      <motion.img
-        animate={{
-          filter: ["blur(0px)", "blur(2px)"],
-          scale: [1.2, 0.9],
-          rotateX: [12, 7],
-          rotateY: [4, 7],
-          rotateZ: [2, 6],
-          skew: [0, 4],
-          top: ["25%", "27%"],
-          left: ["33%", "35%"],
-        }}
-        transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
-        className="absolute pointer-events-none top-1/4 left-1/3 transform rotate-12 w-20"
-        src="/imgs/juicy-card.png"
-        alt="card"
-      />
+      <Cards1Back />
+
       <motion.img
         animate={{
           filter: ["blur(0px)", "blur(2px)"],
@@ -43,7 +30,7 @@ export default function HeroSection({
         }}
         transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
         className="absolute pointer-events-none top-1/4 left-1/3 transform rotate-12 w-20 z-10"
-        src="/imgs/juicy-card.png"
+        src="/imgs/cherry.png"
         alt="card"
       />
       <div className=" hero-section-net">

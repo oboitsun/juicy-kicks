@@ -11,6 +11,22 @@ export default function AboutUs() {
         animate={{
           filter: ["blur(0px)", "blur(2px)"],
           scale: [1.2, 0.9],
+          rotateX: [12, -47],
+          rotateY: [4, 67],
+          rotateZ: [2, 26],
+          skew: [0, 4],
+          top: ["5%", "8%"],
+          left: ["3%", "9%"],
+        }}
+        transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
+        className="absolute pointer-events-none top-1/4 left-1/3 transform rotate-12 w-20 z-10"
+        src="/imgs/fig.png"
+        alt="card"
+      />
+      <motion.img
+        animate={{
+          filter: ["blur(0px)", "blur(2px)"],
+          scale: [1.2, 0.9],
           rotateX: [140, 7],
           rotateY: [4, 147],
           rotateZ: [142, 6],

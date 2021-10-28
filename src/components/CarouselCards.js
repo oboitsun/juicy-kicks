@@ -76,7 +76,7 @@ export default function CarouselCards() {
             />
           </div>
         </div>
-        {/* <div
+        <div
           onClick={() => {
             rotate("n");
           }}
@@ -91,7 +91,7 @@ export default function CarouselCards() {
           class="prev"
         >
           Prev
-        </div> */}
+        </div>
       </div>
     </>
   );

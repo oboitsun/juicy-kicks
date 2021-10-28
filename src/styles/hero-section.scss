@@ -68,6 +68,7 @@
     display: block;
   }
   .burst {
+    z-index: 3;
     top: 30%;
     @apply absolute block w-screen -translate-y-1/2 left-1/2 transform -translate-x-1/2;
     max-width: 1040px;

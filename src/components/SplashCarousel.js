@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "swiper/swiper.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,7 +11,6 @@ const splash_array = [
 ];
 SwiperCore.use([Autoplay]);
 export default function SplashCarousel() {
-  const [slideIdx, setSlideIdx] = useState(0);
   return (
     <div className="w-full relative z-10">
       <Swiper

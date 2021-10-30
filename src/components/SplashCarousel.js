@@ -16,7 +16,7 @@ export default function SplashCarousel() {
     <div className="w-full relative z-10">
       <Swiper
         autoplay={{ delay: 2500 }}
-        loop
+        loop={true}
         centeredSlides
         spaceBetween={0}
         slidesPerView={1}

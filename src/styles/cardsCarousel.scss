@@ -52,7 +52,7 @@
 .prev {
   color: white;
   position: absolute;
-  top: 140%;
+  top: 310px;
   padding: 0.5em 1em;
   cursor: pointer;
   background: #c9e606;
@@ -66,12 +66,12 @@
 }
 .next:active,
 .prev:active {
-  top: 140%;
+  top: 310px;
   box-shadow: 0 1px 0 #999;
 }
 .next {
-  right: 0%;
+  right: 20%;
 }
 .prev {
-  left: 0%;
+  left: 20%;
 }

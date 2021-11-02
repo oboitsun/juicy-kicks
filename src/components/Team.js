@@ -8,28 +8,28 @@ import Line from "./Line";
 import JuicyCard from "./JuicyCard";
 const team = [
   {
-    src: "/imgs/team1.png",
+    src: "/imgs/card8.png",
     name: "John Johnson",
     position: "CEO Juicy kicks",
     fb: "https://facebook.com",
     twitter: "https://twitter.com",
   },
   {
-    src: "/imgs/team2.png",
+    src: "/imgs/card2.png",
     name: "John Johnson",
     position: "CEO Juicy kicks",
     fb: "https://facebook.com",
     twitter: "https://twitter.com",
   },
   {
-    src: "/imgs/team3.png",
+    src: "/imgs/card3.png",
     name: "John Johnson",
     position: "CEO Juicy kicks",
     fb: "https://facebook.com",
     twitter: "https://twitter.com",
   },
   {
-    src: "/imgs/team4.png",
+    src: "/imgs/card5.png",
     name: "John Johnson",
     position: "CEO Juicy kicks",
     fb: "https://facebook.com",

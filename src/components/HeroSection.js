@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/hero-section.scss";
 import WelcomeTo from "./WelcomeTo";
-import { m, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import SplashCarousel from "./SplashCarousel";
 import Cards1Back from "./Cards1Back";
 export default function HeroSection({
@@ -39,8 +39,6 @@ export default function HeroSection({
           src="/imgs/bottom-bg.png"
           alt="bg"
         />
-        {/* <div className=" left-0 net-gradient"></div>
-        <div className="right-0  net-gradient gradient-r"></div> */}
       </div>
 
       <div className="my-container relative z-10  lg:flex lg:justify-between">

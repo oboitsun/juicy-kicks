@@ -24,7 +24,7 @@ export default function Header({
     { href: "about-us", text: "About" },
     { href: "team", text: "Team" },
     { href: "roadmap", text: "Roadmap" },
-    { href: "market", text: "Market" },
+    { href: "https://juicy-kicks-portal.vercel.app", text: "Portal" },
     { href: "contact-us", text: "Get in touch" },
   ];
 
@@ -44,11 +44,17 @@ export default function Header({
         </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
         <div className="hidden lg:flex text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center">
-          {links.map((l, i) => (
-            <Anchor key={i} to={l.href} {...linkProps}>
-              {l.text}
-            </Anchor>
-          ))}
+          {links.map((l, i) =>
+            l.text !== "Portal" ? (
+              <Anchor key={i} to={l.href} {...linkProps}>
+                {l.text}
+              </Anchor>
+            ) : (
+              <a className="anchor text-white" href={l.href}>
+                {l.text}
+              </a>
+            )
+          )}
           <Socials />
           {rendered && (
             <ConnectWallet

@@ -24,7 +24,7 @@ export default function Header({
     { href: "about-us", text: "About" },
     { href: "team", text: "Team" },
     { href: "roadmap", text: "Roadmap" },
-    { href: "https://juicy-kicks-portal.vercel.app", text: "Portal" },
+    { href: "https://portal.juicykicks.io", text: "Portal" },
     { href: "contact-us", text: "Get in touch" },
   ];
 

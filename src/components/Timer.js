@@ -3,7 +3,8 @@ import TimerCountItem from "./TimerCountItem";
 
 import { calculateTimeLeft } from "./utils";
 export default function Timer() {
-  const dayX = new Date("November 23, 2021 00:00:00").getTime();
+  const today = Date.now();
+  const dayX = new Date("December 23, 2021 00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
     hours: "0",
     days: "0",
@@ -27,15 +28,19 @@ export default function Timer() {
         src="/imgs/timer-border.svg"
         alt="border"
       />
-      <div className=" text-white  timer">
-        <TimerCountItem time={timeLeft.days} text="Days" />
-        <p className="timer-digits px-1 relative top-2 ">:</p>
-        <TimerCountItem time={timeLeft.hours} text="Hours" />
-        <p className="timer-digits px-1 relative top-2 ">:</p>
-        <TimerCountItem time={timeLeft.minutes} text="Minutes" />
-        <p className="timer-digits px-1 relative top-2">:</p>
-        <TimerCountItem time={timeLeft.seconds} text="Seconds" />
-      </div>
+      {dayX < today ? (
+        <p className="font-fright text-xl lg:text-4xl text-white">Ready to Mint now!</p>
+      ) : (
+        <div className=" text-white  timer">
+          <TimerCountItem time={timeLeft.days} text="Days" />
+          <p className="timer-digits px-1 relative top-2 ">:</p>
+          <TimerCountItem time={timeLeft.hours} text="Hours" />
+          <p className="timer-digits px-1 relative top-2 ">:</p>
+          <TimerCountItem time={timeLeft.minutes} text="Minutes" />
+          <p className="timer-digits px-1 relative top-2">:</p>
+          <TimerCountItem time={timeLeft.seconds} text="Seconds" />
+        </div>
+      )}
     </div>
   );
 }

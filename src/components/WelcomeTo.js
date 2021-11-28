@@ -25,13 +25,13 @@ export default function WelcomeTo({
   return (
     <motion.div variants={cont} initial="hidden" animate="show" className="welcome-to ">
       <motion.p variants={item} key={1} className="title  ">
-        Welcome
+        Enter
       </motion.p>
       <motion.p variants={item} key={2} className="title title-big ">
         juicy kicks
       </motion.p>
       <motion.p variants={item} key={1} className="title  ">
-        to the
+        the world of
       </motion.p>
       <motion.div variants={item} key={4}>
         <Timer />

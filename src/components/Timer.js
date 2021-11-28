@@ -23,6 +23,9 @@ export default function Timer() {
   });
   return (
     <div className=" flex items-center  mb-4 lg:mb-6 lg:mt-4 relative ">
+      <p className="text-xs text-center text-white uppercase absolute -top-2 left-1/2  transform -translate-x-1/2">
+        time till launch:
+      </p>
       <img
         className="w-full absolute pointer-events-none"
         src="/imgs/timer-border.svg"

@@ -25,13 +25,13 @@ export default function WelcomeTo({
   return (
     <motion.div variants={cont} initial="hidden" animate="show" className="welcome-to ">
       <motion.p variants={item} key={1} className="title  ">
-        Enter
+        Enter the
       </motion.p>
       <motion.p variants={item} key={2} className="title title-big ">
         juicy kicks
       </motion.p>
       <motion.p variants={item} key={1} className="title  ">
-        the world of
+        meta-verse
       </motion.p>
       <motion.div variants={item} key={4}>
         <Timer />
@@ -50,7 +50,7 @@ export default function WelcomeTo({
         <img
           style={{ width: 64 }}
           className="block ml-4 h-auto"
-          src="/imgs/dfinity-logo.png"
+          src="/imgs/dfinity-colored.png"
           alt="dfinity-blockchain"
         />
       </motion.div>

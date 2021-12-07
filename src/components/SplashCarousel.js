@@ -14,14 +14,14 @@ SwiperCore.use([Autoplay, Navigation]);
 export default function SplashCarousel() {
   return (
     <div className="w-full relative z-10">
-      <div id="splash-next" className="splash-next">
+      <div id="splash-next" className="splash-next cursor-pointer">
         <img
           className="w-1/2 transform rotate-180 invert pr-1"
           src="/imgs/left-arrow.svg"
           alt="next-slide"
         />
       </div>
-      <div id="splash-prev" className="splash-prev">
+      <div id="splash-prev" className="splash-prev cursor-pointer">
         <img className="w-1/2 pr-1  invert" src="/imgs/left-arrow.svg" alt="next-slide" />
       </div>
       <Swiper

@@ -10,26 +10,26 @@ const roadmap = [
   {
     img: "/imgs/roadmap-milestone1.svg",
     month: "25",
-    heading: "Aliquam malesuada",
-    text: "Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. ",
+    heading: "November 2021",
+    text: "Juicy Kicks world design and development starts. ",
   },
   {
     img: "/imgs/fruit5.png",
     month: "50",
-    heading: "Aliquam malesuada",
-    text: "Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. ",
+    heading: "December 2021",
+    text: "Official minting of the first 4444 Juicy Kicks begins.",
   },
   {
     img: "/imgs/roadmap-milestone3.svg",
     month: "75",
-    heading: "Aliquam malesuada",
-    text: "Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. ",
+    heading: "January 2022",
+    text: "Second phase of minting another 4444 Juicy Kicks",
   },
   {
     img: "/imgs/fruit5.png",
     month: "100",
-    heading: "Aliquam malesuada",
-    text: "Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis. ",
+    heading: "February 2022",
+    text: "Potential game development, partnerships and expansion.",
   },
 ];
 export default function Roadmap2() {
@@ -66,7 +66,7 @@ export default function Roadmap2() {
             <motion.div
               variants={item}
               key={i}
-              className="w-full flex flex-col  items-center milestone  z-10 relative p-5"
+              className="w-full flex flex-col gap-10  items-center milestone  z-10 relative p-5"
             >
               <div className={`roadmap-line ${i % 2 === 0 ? "top" : "bottom"}`}></div>
               <div className={`relative w-1/2 ${i % 2 === 0 ? "lg:order-1" : ""}`}>

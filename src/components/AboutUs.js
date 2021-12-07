@@ -48,10 +48,11 @@ export default function AboutUs() {
             About <br /> Juicy kicks
           </Heading>
           <SubHeading>
-            Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt
-            mauris. Sed sollicitudin congue nunc ac iaculis. Vivamus tristique massa ante,
-            et accumsan felis imperdiet at. In purus libero, venenatis dignissim massa ac,
-            sodales malesuada quam. Aliquam in fermentum metus. Donec in mauris arcu.
+            8888 Juicy Kicks Living on the Blockchain. What do you get if you cross 8888
+            fruit who wear some sick kicks, and have different attributes, and clothing?
+            You get our own grown collection of Juicy Kicks. There are over 30 different
+            types of fruit, over 100 different clothing and layers, and every Juicy Kick
+            is unique and looking for a home!
           </SubHeading>
         </div>
       </div>

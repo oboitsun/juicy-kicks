@@ -87,6 +87,15 @@
     left: -20px;
     transform: translateY(-50%);
   }
+  .swiper-slide {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s;
+  }
+  .swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+  }
   .burst {
     z-index: 3;
     top: 30%;
@@ -132,15 +141,6 @@
     .connect-wallet {
       width: 100%;
       max-width: 300px;
-    }
-    .swiper-slide {
-      opacity: 0;
-      transform: scale(0);
-      transition: all 0.3s;
-    }
-    .swiper-slide-active {
-      transform: scale(1);
-      opacity: 1;
     }
   }
 

@@ -65,18 +65,18 @@
       border: 8px solid #ffad1f;
       position: absolute;
       width: calc(100% + 28px);
-      height: 40%;
+      height: 25%;
 
       &.top {
-        height: 40%;
-        bottom: 40%;
+        height: 25%;
+        bottom: 45%;
         transform: translateY(50%);
         border-top: none;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
       }
       &.bottom {
-        top: 40%;
+        top: 35%;
         transform: translateY(-50%);
         border-bottom: none;
         border-bottom-right-radius: 0;

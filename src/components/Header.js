@@ -22,10 +22,11 @@ export default function Header({
   }, []);
   const links = [
     { href: "about-us", text: "About" },
-    { href: "team", text: "Team" },
+    // { href: "team", text: "Team" },
     { href: "roadmap", text: "Roadmap" },
     { href: "https://portal.juicykicks.io", text: "Portal" },
     { href: "contact-us", text: "Get in touch" },
+    { href: "faq", text: "faq" },
   ];
 
   const linkProps = {

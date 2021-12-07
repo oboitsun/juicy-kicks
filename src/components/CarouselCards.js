@@ -31,7 +31,7 @@ export default function CarouselCards() {
   }, [carousel]);
   return (
     <>
-      <div class="container pb-20">
+      <div class="sp_container ">
         <div {...handlers} id="carousel" class="carousel">
           <div class="item a">
             <img
@@ -80,7 +80,7 @@ export default function CarouselCards() {
           onClick={() => {
             rotate("n");
           }}
-          class="next"
+          className="next"
         >
           Next
         </div>
@@ -88,7 +88,7 @@ export default function CarouselCards() {
           onClick={() => {
             rotate("p");
           }}
-          class="prev"
+          className="prev z-10 relative"
         >
           Prev
         </div>

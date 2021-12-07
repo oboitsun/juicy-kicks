@@ -48,7 +48,7 @@ export default function HeroSection({
           setUserAddress={setUserAddress}
           userAddress={userAddress}
         />
-        <div className="relative z-10 splash pointer-events-none">
+        <div className="relative z-10 splash ">
           <SplashCarousel />
           <div className="burst">
             <motion.img

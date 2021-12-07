@@ -6,7 +6,7 @@ import "../styles/about-us.scss";
 import CarouselCards from "./CarouselCards";
 export default function AboutUs() {
   return (
-    <div id="about-us" className="relative">
+    <div id="about-us" className="relative ">
       <motion.img
         animate={{
           filter: ["blur(0px)", "blur(2px)"],
@@ -39,8 +39,8 @@ export default function AboutUs() {
         src="/imgs/juicy-card1.png"
         alt="juicy-card"
       />
-      <div className="my-container flex flex-col lg:flex-row items-center lg:gap-20 xl:gap-20">
-        <div className="lg:w-1/2">
+      <div className="my-container flex flex-col lg:flex-row items-center lg:gap-20 xl:gap-20 pb-20">
+        <div className="lg:w-1/2 h-full">
           <CarouselCards />
         </div>
         <div className="lg:w-1/2 pt-40 lg:pt-0 lg:pl-10 xl:pl-0">

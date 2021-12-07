@@ -15,7 +15,7 @@ export default function Cards1Back() {
           left: ["53%", "55%"],
         }}
         transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
-        className="absolute pointer-events-none top-1/4 left-1/3 transform rotate-12 w-20 z-10"
+        className="absolute hidden lg:block pointer-events-none top-1/4 left-1/3 transform rotate-12 w-20 z-10"
         src="/imgs/coconut.png"
         alt="card"
       />
@@ -31,7 +31,7 @@ export default function Cards1Back() {
           left: ["59%", "62%"],
         }}
         transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
-        className="absolute pointer-events-none top-1/4 left-1/3 transform rotate-12 w-20 z-10"
+        className="absolute hidden lg:block pointer-events-none top-1/4 left-1/3 transform rotate-12 w-20 z-10"
         src="/imgs/cherry.png"
         alt="card"
       />
@@ -44,7 +44,7 @@ export default function Cards1Back() {
           rotateZ: [2, 26],
           skew: [0, 4],
           top: ["18%", "19%"],
-          left: ["40%", "49%"],
+          left: ["70%", "79%"],
         }}
         transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
         className="absolute pointer-events-none top-1/4 left-1/3 transform rotate-12 w-20 z-10"

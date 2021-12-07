@@ -39,11 +39,11 @@ export default function AboutUs() {
         src="/imgs/juicy-card1.png"
         alt="juicy-card"
       />
-      <div className="my-container flex flex-col lg:flex-row items-center lg:gap-10 xl:gap-20">
+      <div className="my-container flex flex-col lg:flex-row items-center lg:gap-20 xl:gap-20">
         <div className="lg:w-1/2">
           <CarouselCards />
         </div>
-        <div className="lg:w-1/2 pt-40 lg:pt-0">
+        <div className="lg:w-1/2 pt-40 lg:pt-0 lg:pl-10 xl:pl-0">
           <Heading>
             About <br /> Juicy kicks
           </Heading>

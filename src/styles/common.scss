@@ -1,5 +1,8 @@
 @import "./variables.scss";
 .app {
+  .gradient-bg {
+    background: linear-gradient(180deg, #ff8413 0%, #fd8517 71.87%);
+  }
   .btn {
     text-transform: uppercase;
     display: block;

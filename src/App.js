@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import ModalMenu from "./components/ModalMenu";
 import ComingSoonPopUp from "./components/ComingSoonPopUp";
 import Roadmap from "./components/Roadmap";
+import Roadmap2 from "./components/Roadmap2";
 import ContactUs from "./components/ContactUs";
 import BottomSection from "./components/BottomSection";
 import AboutUs from "./components/AboutUs";
@@ -33,8 +34,9 @@ export default function App() {
   return (
     <div className=" relative overflow-hidden app">
       <div id="top"></div>
+      <div className="w-full h-full fixed top-0 left-0 object-cover z-0 gradient-bg"></div>
       <img
-        className="w-full h-full fixed top-0 left-0 object-cover z-0"
+        className="w-full h-full fixed top-0 left-0 object-cover z-0 opacity-50"
         src="/imgs/fixed-bg.jpg"
         alt="fixed"
       />
@@ -56,8 +58,9 @@ export default function App() {
       />
       <AboutUs />
 
-      <Team />
-      <Roadmap />
+      {/* <Team /> */}
+      <Roadmap2 />
+      {/* <Roadmap /> */}
       <FAQ />
       <div className="bottom-gradient">
         <ContactUs />

@@ -11,12 +11,17 @@ export default function FaqItem({ qstn, answr }) {
     setHeightState(setActive === "active" ? "0px" : `${content.current.scrollHeight}px`);
   }
   return (
-    <div className="lg:w-full text-white">
-      <div onClick={toggleAccordion} className="cursor-pointer faq-item ">
-        <p className="faq-question  ">{qstn}</p>
+    <div className="lg:w-full">
+      <div
+        onClick={toggleAccordion}
+        className="cursor-pointer flex w-full justify-between my-5 "
+      >
+        <p className="font-extrabold text-xs uppercase ">{qstn}</p>
         <img
-          className={`arrow-down transform ${setActive ? "rotate-180" : "rotate-0"}`}
-          src="/imgs/chevron-down-solid.svg"
+          className={`pl-2 transform transition-all filter invert ${
+            setActive ? "rotate-180" : "rotate-0"
+          }`}
+          src="/imgs/arrow-down.svg"
           alt="expand"
         />
       </div>
@@ -27,6 +32,7 @@ export default function FaqItem({ qstn, answr }) {
       >
         <p className="pb-5">{answr}</p>
       </div>
+      <div className="faq-divider"></div>
     </div>
   );
 }

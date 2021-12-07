@@ -8,18 +8,25 @@
     line-height: 1;
     display: block;
     position: absolute;
-    top: 56%;
+    top: 60%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-weight: 600;
     font-size: clamp(40px, 15vw, 48px);
   }
+  .roadmap-line {
+    display: none;
+  }
+  .roadmap-month {
+    top: 50%;
+    color: white;
+  }
   .roadmap-month > span {
     font-size: 24px;
   }
-  .month-1 {
-    top: 50%;
-  }
+  // .month-1 {
+  //   top: 50%;
+  // }
   .month-5 {
     color: white;
   }
@@ -45,8 +52,36 @@
       line-height: 34px;
     }
     .month-text {
+      font-weight: 500;
       font-size: 14px;
       line-height: 34px;
+    }
+    .roadmap-month {
+    }
+    .roadmap-line {
+      display: block;
+      // box-sizing: content-box;
+      border-radius: 70px;
+      border: 8px solid #ffad1f;
+      position: absolute;
+      width: calc(100% + 28px);
+      height: 40%;
+
+      &.top {
+        height: 40%;
+        bottom: 40%;
+        transform: translateY(50%);
+        border-top: none;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+      }
+      &.bottom {
+        top: 40%;
+        transform: translateY(-50%);
+        border-bottom: none;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
     }
   }
 
@@ -61,7 +96,7 @@
       line-height: 34px;
     }
     .roadmap-month {
-      font-size: 48px;
+      font-size: 32px;
     }
   }
 }

@@ -47,9 +47,9 @@
   }
 
   .timer-digits {
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 64px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 44px;
     text-align: center;
   }
   .timer-date {
@@ -85,6 +85,11 @@
     .hero-section-net {
       top: 65%;
       width: 150%;
+    }
+    .timer-digits {
+      font-size: 40px;
+      line-height: 60px;
+      font-weight: 900;
     }
     .splash {
       align-self: flex-end;

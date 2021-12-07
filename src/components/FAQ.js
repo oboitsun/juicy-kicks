@@ -48,13 +48,15 @@ export default function FAQ() {
       />
       <div className="my-container flex flex-col">
         <Heading>FAQ'S</Heading>
-        <div className="text-center lg:w-1/2 mx-auto">
+        <div className="text-center lg:w-4/5 mx-auto">
           <SubHeading>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
           </SubHeading>
         </div>
-        <div className="grid grid-cols-1 gap-5 w-full">
+        <div className="grid lg:grid-cols-2 gap-x-5 text-white">
+          <div className="faq-divider"></div>
+          <div className="faq-divider hidden lg:block"></div>
           {faqs.map((f, i) => (
             <FaqItem key={i} {...f} />
           ))}

@@ -8,7 +8,7 @@ export default function BottomSection() {
         <motion.img
           animate={{ x: [0, 5, -5], y: [-5, 4, -3] }}
           transition={{ duration: 3, repeatType: "mirror", repeat: "Infinity" }}
-          className="overflow-hidden block w-full  relative top-5  z-10"
+          className="overflow-hidden block w-full relative top-5  z-10"
           src="/imgs/squad-bottom.png"
           alt="squaaaaad"
         />{" "}

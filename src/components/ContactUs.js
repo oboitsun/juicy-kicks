@@ -15,8 +15,8 @@ export default function ContactUs() {
         </div>
         <Heading>Get in touch</Heading>
         <SubHeading>
-          Venenatis dignissim massa ac, sodales malesuada quam. Aliquam in fermentum
-          metus. Donec in mauris arcu.
+          We are looking for partnerships at the moment to grow our project - if you are
+          interested please reach out to us.
         </SubHeading>
         <form className="contact-form">
           <div className="contact-grid">

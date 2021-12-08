@@ -73,10 +73,7 @@ export default function FAQ() {
       <div className="my-container flex flex-col">
         <Heading>FAQ'S</Heading>
         <div className="text-center lg:w-4/5 mx-auto">
-          <SubHeading>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-          </SubHeading>
+          <SubHeading>Some answers to some of the questions you may have</SubHeading>
         </div>
         <div className="grid lg:grid-cols-2 gap-x-5 text-white">
           <div className="faq-divider"></div>

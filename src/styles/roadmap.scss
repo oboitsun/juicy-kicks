@@ -3,24 +3,22 @@
   // background: linear-gradient(180deg, #b65700 0%, #d66703 100%);
   padding: 60px 0;
   .roadmap-month {
-    color: black;
+    top: 50%;
+    color: white;
     width: max-content;
     line-height: 1;
     display: block;
     position: absolute;
-    top: 60%;
+
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-weight: 600;
-    font-size: clamp(40px, 15vw, 48px);
+    font-size: clamp(20px, 150%, 34px);
   }
   .roadmap-line {
     display: none;
   }
-  .roadmap-month {
-    top: 50%;
-    color: white;
-  }
+
   .roadmap-month > span {
     font-size: 24px;
   }
@@ -58,18 +56,23 @@
     }
     .roadmap-month {
     }
+    .month-5 {
+      .month-text {
+        line-height: 20px;
+      }
+    }
     .roadmap-line {
       display: block;
       // box-sizing: content-box;
-      border-radius: 70px;
+      border-radius: 65px;
       border: 8px solid #ffad1f;
       position: absolute;
       width: calc(100% + 28px);
-      height: 25%;
+      height: 31%;
 
       &.top {
-        height: 25%;
-        bottom: 45%;
+        height: 31%;
+        bottom: 38%;
         transform: translateY(50%);
         border-top: none;
         border-top-right-radius: 0;
@@ -88,15 +91,14 @@
   @media (min-width: 1280px) {
     padding: 90px 0;
     .month-heading {
-      font-size: 24px;
+      font-size: 100%;
       line-height: 34px;
     }
     .month-text {
-      font-size: 16px;
+      font-size: 80%;
       line-height: 34px;
     }
     .roadmap-month {
-      font-size: 32px;
     }
   }
 }

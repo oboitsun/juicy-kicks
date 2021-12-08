@@ -8,13 +8,19 @@ import { useInView } from "react-intersection-observer";
 import RoadmapLine from "./RoadmapLine";
 const roadmap = [
   {
+    img: "/imgs/roadmap-milestone0.svg",
+    month: "0",
+    heading: "October 2021",
+    text: "The initial vision and plan of Juicy Kicks Starts. ",
+  },
+  {
     img: "/imgs/roadmap-milestone1.svg",
     month: "25",
     heading: "November 2021",
     text: "Juicy Kicks world design and development starts. ",
   },
   {
-    img: "/imgs/fruit5.png",
+    img: "/imgs/roadmap-milestone2.png",
     month: "50",
     heading: "December 2021",
     text: "Official minting of the first 4444 Juicy Kicks begins.",
@@ -26,7 +32,7 @@ const roadmap = [
     text: "Second phase of minting another 4444 Juicy Kicks",
   },
   {
-    img: "/imgs/fruit5.png",
+    img: "/imgs/roadmap-milestone4.svg",
     month: "100",
     heading: "February 2022",
     text: "Potential game development, partnerships and expansion.",
@@ -60,18 +66,20 @@ export default function Roadmap2() {
           variants={cont}
           initial="hidden"
           animate={inView ? "show" : "hidden"}
-          className="grid gap-5 grid-cols-1 lg:grid-cols-4 py-10 relative"
+          className="grid gap-5 grid-cols-1 lg:grid-cols-5 py-10 relative"
         >
           {roadmap.map((point, i) => (
             <motion.div
               variants={item}
               key={i}
-              className="w-full flex flex-col gap-10  items-center milestone  z-10 relative p-5"
+              className={`w-full flex flex-col gap-10  items-center milestone  z-10 relative p-5  month-${
+                i + 1
+              }`}
             >
               <div className={`roadmap-line ${i % 2 === 0 ? "top" : "bottom"}`}></div>
               <div className={`relative w-1/2 ${i % 2 === 0 ? "lg:order-1" : ""}`}>
                 <img className="block w-full " src={point.img} alt="roadmap-milestone" />
-                <p className={`roadmap-month month-${i + 1}`}>
+                <p className={`roadmap-month `}>
                   {point.month}
                   <span>%</span>
                 </p>

@@ -1,11 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "../styles/bottom-section.scss";
 export default function BottomSection() {
   return (
     <div className="pt-20 relative bottom-section">
       <div className="my-container relative bottom-20">
-        <img
-          className="xoverflow-hidden block w-full  relative top-5  z-10"
+        <motion.img
+          animate={{ x: [0, 5, -5], y: [-5, 4, -3] }}
+          transition={{ duration: 3, repeatType: "mirror", repeat: "Infinity" }}
+          className="overflow-hidden block w-full  relative top-5  z-10"
           src="/imgs/squad-bottom.png"
           alt="squaaaaad"
         />{" "}

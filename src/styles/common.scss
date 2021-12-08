@@ -59,7 +59,13 @@
     width: 40%;
     z-index: 10;
   }
-
+  .logo {
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      filter: invert(1);
+    }
+  }
   .anchor {
     text-transform: uppercase;
     min-width: max-content;
@@ -72,10 +78,11 @@
   .socials-icon {
     display: block;
     color: $lime;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   .socials-icon:hover {
-    color: $orange;
+    transform: scale(1.1);
+    color: rgb(255, 206, 46);
   }
 
   .bottom-gradient {

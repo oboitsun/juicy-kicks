@@ -28,7 +28,7 @@ export default function Logo({ wide }) {
         className="logo"
         src="/imgs/logo-svg.svg"
         layout="responsive"
-        alt="SNEAKER BEARS"
+        alt="Juicy Kicks Logo"
       />
     </Anchor>
   );

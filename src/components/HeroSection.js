@@ -62,7 +62,7 @@ export default function HeroSection({
                 repeatType: "loop",
                 ease: "linear",
               }}
-              className="w-full"
+              className="w-full pointer-events-none"
               src="/imgs/burst.png"
               alt="burst"
             />

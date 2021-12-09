@@ -57,13 +57,13 @@ export default function App() {
         userAddress={userAddress}
       />
       <AboutUs />
-
+      <FAQ />
       {/* <Team /> */}
       <Roadmap2 />
       {/* <Roadmap /> */}
-      <FAQ />
+
       <div className="bottom-gradient">
-        <ContactUs />
+        {/* <ContactUs /> */}
         <BottomSection />
       </div>
 

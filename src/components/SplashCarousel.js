@@ -9,6 +9,7 @@ const splash_array = [
   "/imgs/splash3.png",
   "/imgs/splash4.png",
   "/imgs/splash5.png",
+  "/imgs/splash6.png",
 ];
 SwiperCore.use([Autoplay, Navigation]);
 export default function SplashCarousel() {
@@ -34,11 +35,13 @@ export default function SplashCarousel() {
       >
         {splash_array.map((slide, i) => (
           <SwiperSlide key={i}>
-            <img
-              className="w-full relative z-10 px-4 transition-all transform hover:scale-105"
-              src={slide}
-              alt="splash"
-            />
+            <div className="w-full h-full flex items-center">
+              <img
+                className="w-full relative z-10 px-4 transition-all transform hover:scale-105"
+                src={slide}
+                alt="splash"
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

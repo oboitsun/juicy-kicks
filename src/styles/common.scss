@@ -61,10 +61,6 @@
   }
   .logo {
     cursor: pointer;
-    transition: all 0.3s;
-    &:hover {
-      filter: invert(1);
-    }
   }
   .anchor {
     text-transform: uppercase;

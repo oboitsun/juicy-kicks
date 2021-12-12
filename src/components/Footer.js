@@ -27,7 +27,7 @@ export default function Footer({ showPopup, setShowPopup, userAddress, setUserAd
     <div className="footer ">
       <div className="my-container ">
         <div className="w-full justify-between flex items-center">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center ">
             <Logo wide={false} />
             <div className="lg:hidden pt-5">
               {" "}

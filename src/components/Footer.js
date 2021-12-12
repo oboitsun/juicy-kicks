@@ -35,7 +35,7 @@ export default function Footer({ showPopup, setShowPopup, userAddress, setUserAd
             </div>
 
             <p className="text-white lg:hidden text-center py-5">
-              2021 © NZ Marketing Group Limited trading as Munchy. All Rights Reserved.
+              2021 © Juicy Kicks. All Rights Reserved.
             </p>
           </div>
 

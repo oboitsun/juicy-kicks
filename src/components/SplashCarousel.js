@@ -10,6 +10,7 @@ const splash_array = [
   "/imgs/splash4.png",
   "/imgs/splash5.png",
   "/imgs/splash6.png",
+  "/imgs/splash7.png",
 ];
 SwiperCore.use([Autoplay, Navigation]);
 export default function SplashCarousel() {

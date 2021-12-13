@@ -3,7 +3,7 @@ import React from "react";
 export default function Socials({ big = false }) {
   return (
     <div className="flex gap-6">
-      <a className={`socials-icon ${big ? "w-10" : "w-5"}`} href="https://instagram.com">
+      <a className={`socials-icon ${big ? "w-10" : "w-5"}`} href="https://www.instagram.com/juicykicks.io">
         <svg
           className="fill-current w-full"
           viewBox="0 0 20 20"
@@ -31,7 +31,7 @@ export default function Socials({ big = false }) {
           />
         </svg>
       </a>
-      <a className={`socials-icon ${big ? "w-10" : "w-5"}`} href="https://discord.com">
+      <a className={`socials-icon ${big ? "w-10" : "w-5"}`} href="https://twitter.com/juicykicksnft">
         <svg
           className="fill-current w-full"
           viewBox="0 0 20 20"

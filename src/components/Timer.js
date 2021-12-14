@@ -4,7 +4,7 @@ import TimerCountItem from "./TimerCountItem";
 import { calculateTimeLeft } from "./utils";
 export default function Timer() {
   const today = Date.now();
-  const dayX = new Date("February 23, 2022 00:00:00").getTime();
+  const dayX = new Date("January 23, 2022 00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
     hours: "0",
     days: "0",
@@ -32,7 +32,9 @@ export default function Timer() {
         alt="border"
       />
       {dayX < today ? (
-        <p className="font-fright text-xl lg:text-4xl text-white">Ready to Mint now!</p>
+        <p className="font-fright text-xl lg:text-4xl text-white">
+          Ready to Mint now!
+        </p>
       ) : (
         <div className=" text-white  timer">
           <TimerCountItem time={timeLeft.days} text="Days" />

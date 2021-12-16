@@ -1,5 +1,6 @@
-import React from "react";
-import "./../styles/roadmap.scss";
+import React, { useState } from "react";
+import "../styles/roadmap.scss";
+import "../styles/roadmap2.scss";
 import Circle from "./Circle";
 import Heading from "./Heading";
 import Line from "./Line";
@@ -39,14 +40,24 @@ const roadmap = [
   },
 ];
 export default function Roadmap2() {
+  const [showFull, setShowFull] = useState(false);
   const { ref, inView } = useInView({ threshold: 0.1 });
   const cont = {
-    show: { opacity: 1, transition: { staggerChildren: 0.2, delayChildren: 0.5 } },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2, delayChildren: 0.5 },
+    },
     hidden: { opacity: 0 },
   };
   const item = {
     show: { opacity: 1 },
     hidden: { opacity: 0 },
+  };
+  const handleShowFull = () => {
+    setShowFull(true);
+  };
+  const handleCloseFull = () => {
+    setShowFull(false);
   };
   return (
     <div id="roadmap" className="relative">
@@ -76,9 +87,17 @@ export default function Roadmap2() {
                 i + 1
               }`}
             >
-              <div className={`roadmap-line ${i % 2 === 0 ? "top" : "bottom"}`}></div>
-              <div className={`relative w-1/2 ${i % 2 === 0 ? "lg:order-1" : ""}`}>
-                <img className="block w-full " src={point.img} alt="roadmap-milestone" />
+              <div
+                className={`roadmap-line ${i % 2 === 0 ? "top" : "bottom"}`}
+              ></div>
+              <div
+                className={`relative w-1/2 ${i % 2 === 0 ? "lg:order-1" : ""}`}
+              >
+                <img
+                  className="block w-full "
+                  src={point.img}
+                  alt="roadmap-milestone"
+                />
                 <p className={`roadmap-month `}>
                   {point.month}
                   <span>%</span>
@@ -91,6 +110,17 @@ export default function Roadmap2() {
             </motion.div>
           ))}
         </motion.div>
+      </div>
+      <div className="flex w-full justify-center items-center">
+        <button onClick={handleShowFull} className="show-full-button">
+          Show Full Roadmap
+        </button>
+      </div>
+      <div
+        onClick={handleCloseFull}
+        className={`full-roadmap ${showFull ? "show" : ""}`}
+      >
+        WHAT WOULD WE SHOW HERE?:)
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { StoicIdentity } from "ic-stoic-identity";
 import "../styles/connectWallet.scss";
 import CWalletButton from "./Button";

@@ -25,7 +25,7 @@ export default function Header({
     // { href: "team", text: "Team" },
     { href: "roadmap", text: "Roadmap" },
     { href: "https://portal.juicykicks.io", text: "Portal" },
-    { href: "contact-us", text: "Get in touch" },
+    //{ href: "contact-us", text: "Get in touch" },
     { href: "faq", text: "faq" },
   ];
 
@@ -38,7 +38,10 @@ export default function Header({
     className: "anchor text-white ",
   };
   return (
-    <div id="header" className={` ${scrolled ? "bg-orange py-3 shadow-lg" : "py-7"}`}>
+    <div
+      id="header"
+      className={` ${scrolled ? "bg-orange py-3 shadow-lg" : "py-7"}`}
+    >
       <div className="my-container justify-between flex items-center">
         <div className="w-1/4 lg:w-1/6">
           <Logo wide={false} />

@@ -12,6 +12,8 @@ import Roadmap2 from "./components/Roadmap2";
 import ContactUs from "./components/ContactUs";
 import BottomSection from "./components/BottomSection";
 import AboutUs from "./components/AboutUs";
+import UtilitiesSection from "./components/UtilitiesSection";
+import GamesSection from "./components/GamesSection";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,9 +36,9 @@ export default function App() {
   return (
     <div className=" relative overflow-hidden app">
       <div id="top"></div>
-      <div className="w-full h-full fixed top-0 left-0 object-cover z-0 gradient-bg"></div>
+      <div className="w-full h-full fixed top-0 left-0 object-cover z-0 gradient-bg pointer-events-none"></div>
       <img
-        className="w-full h-full fixed top-0 left-0 object-cover z-0 opacity-50"
+        className="w-full h-full fixed top-0 left-0 object-cover z-0 opacity-50 pointer-events-none"
         src="/imgs/fixed-bg.jpg"
         alt="fixed"
       />
@@ -57,6 +59,8 @@ export default function App() {
         userAddress={userAddress}
       />
       <AboutUs />
+      <UtilitiesSection />
+      <GamesSection />
       <FAQ />
       {/* <Team /> */}
       <Roadmap2 />

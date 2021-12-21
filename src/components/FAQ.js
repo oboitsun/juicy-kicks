@@ -62,7 +62,7 @@ export default function FAQ() {
           rotateY: [4, 147],
           rotateZ: [6, 6],
           skew: [0, 4],
-          top: ["-5%", "-6%"],
+          top: ["1%", "3%"],
           right: ["13%", "14%"],
         }}
         transition={{ duration: 5, repeat: "Infinity", repeatType: "mirror" }}
@@ -73,7 +73,9 @@ export default function FAQ() {
       <div className="my-container flex flex-col">
         <Heading>FAQ'S</Heading>
         <div className="text-center lg:w-4/5 mx-auto">
-          <SubHeading>Some answers to some of the questions you may have</SubHeading>
+          <SubHeading>
+            Some answers to some of the questions you may have
+          </SubHeading>
         </div>
         <div className="grid lg:grid-cols-2 gap-x-5 text-white">
           <div className="faq-divider"></div>

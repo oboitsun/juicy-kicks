@@ -58,7 +58,7 @@ export default function UtilitiesSection() {
   }, []);
   return (
     <div className="my-container relative UtilitySection">
-      <Heading>UTILITY OF THE NFT’s</Heading>
+      <Heading>UTILITY of our nft's</Heading>
       <div className="w-full relative z-10">
         <div id="utilities-next" className="splash-next cursor-pointer">
           <img
@@ -85,11 +85,15 @@ export default function UtilitiesSection() {
           {utilities.map((slide, i) => (
             <SwiperSlide key={i}>
               <div className="w-full h-full grid gap-5 ">
-                <div className="w-full flex justify-center relative items-end lg:h-32">
-                  <div className="w-1/2 relative">
-                    <img className="w-full" src={slide.img} alt="splash" />
+                <div className="w-full flex justify-center relative items-end lg:h-32 utility-slide">
+                  <div className="w-1/2 relative ">
                     <img
-                      className="absolute w-1/3 transform bottom-1/3  left-1/2 -translate-x-1/2"
+                      className="w-full utility-fruit"
+                      src={slide.img}
+                      alt="splash"
+                    />
+                    <img
+                      className="absolute w-1/3 transform bottom-1/3  left-1/2 -translate-x-1/2 utility-icon"
                       src={slide.icon}
                       alt="splash"
                     />

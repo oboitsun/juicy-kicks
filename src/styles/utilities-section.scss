@@ -1,6 +1,19 @@
 .UtilitySection {
   padding: 60px 0;
-
+  .utility-fruit {
+    transition: all 0.5s;
+  }
+  .utility-icon {
+    transition: all 0.3s;
+  }
+  .utility-slide:hover {
+    .utility-fruit {
+      transform: scale(1.1) rotate(5deg);
+    }
+    .utility-icon {
+      transform: scale(1.1) translateX(-50%) translateY(0%);
+    }
+  }
   .swiper-wrapper {
     display: flex;
     align-items: center;

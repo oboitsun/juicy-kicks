@@ -58,11 +58,11 @@
   background: #c9e606;
   border-radius: 5px;
 
-  transition: box-shadow 0.1s, top 0.1s;
+  transition: all 0.3s;
 }
 .next:hover,
 .prev:hover {
-  color: #000;
+  background: rgb(255, 206, 46);
 }
 .next:active,
 .prev:active {

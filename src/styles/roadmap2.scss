@@ -12,6 +12,11 @@
   }
   .show-full-button {
     cursor: pointer;
-    @apply w-full max-w-xs bg-lime shadow-md hover:shadow-xl transform hover:-translate-y-1 relative hover:bg-orange transition-all rounded-lg pt-4 pb-3 px-8 text-white uppercase font-extrabold text-xl;
+
+    @apply w-full max-w-xs bg-lime shadow-md hover:shadow-xl transform hover:-translate-y-1 relative  transition-all rounded-lg pt-4 pb-3 px-8 text-white uppercase font-extrabold text-xl;
+
+    &:hover {
+      background: rgb(255, 206, 46);
+    }
   }
 }

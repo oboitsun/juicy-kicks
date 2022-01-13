@@ -11,6 +11,7 @@ const splash_array = [
   "/imgs/splash5.png",
   "/imgs/splash6.png",
   "/imgs/splash7.png",
+  "/imgs/splash8.png",
 ];
 SwiperCore.use([Autoplay, Navigation]);
 export default function SplashCarousel() {
@@ -24,7 +25,11 @@ export default function SplashCarousel() {
         />
       </div>
       <div id="splash-prev" className="splash-prev cursor-pointer">
-        <img className="w-1/2 pr-1  invert" src="/imgs/left-arrow.svg" alt="next-slide" />
+        <img
+          className="w-1/2 pr-1  invert"
+          src="/imgs/left-arrow.svg"
+          alt="next-slide"
+        />
       </div>
       <Swiper
         autoplay={{ delay: 2500 }}

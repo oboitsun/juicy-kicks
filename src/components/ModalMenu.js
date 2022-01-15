@@ -8,11 +8,12 @@ import ConnectWallet from "./ConnectWallet";
 
 export default function ModalMenu({ showMenu, setShowMenu }) {
   const links = [
-    { href: "about-us", text: "About Us" },
-    // { href: "team", text: "Team" },
+    { href: "about-us", text: "About" },
+    { href: "utilities", text: "Utilities" },
     { href: "roadmap", text: "Roadmap" },
-    { href: "market", text: "Market" },
+    { href: "games", text: "Games" },
     { href: "faq", text: "FAQ" },
+    // { href: "https://portal.juicykicks.io", text: "Portal" },
   ];
   const linkProps = {
     spy: true,
@@ -60,9 +61,9 @@ export default function ModalMenu({ showMenu, setShowMenu }) {
           </Anchor>
         </motion.div>
       ))}
-      <motion.div key={11} className="">
+      {/* <motion.div key={11} className="">
         <ConnectWallet />
-      </motion.div>
+      </motion.div> */}
       <motion.div key={12} className="  ">
         <Socials big modal />{" "}
       </motion.div>

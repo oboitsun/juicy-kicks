@@ -1,33 +1,15 @@
 import React from "react";
-
 import Logo from "./Logo";
-import { Link as Anchor } from "react-scroll";
 import "../styles/footer.scss";
 import Socials from "./Socials";
-import ConnectWallet from "./ConnectWallet";
-// const DynamicComponent = dynamic(() => import("./ConnectWallet"), { ssr: false });
+
 export default function Footer({
   showPopup,
   setShowPopup,
   userAddress,
   setUserAddress,
 }) {
-  const links = [
-    { href: "about-us", text: "About Us" },
-    { href: "team", text: "Team" },
-    { href: "roadmap", text: "Roadmap" },
-    { href: "market", text: "Market" },
-    { href: "faq", text: "FAQ" },
-  ];
 
-  const linkProps = {
-    spy: true,
-    smooth: true,
-    offset: -100,
-    duration: 500,
-    activeClass: "active",
-    className: "anchor text-white ",
-  };
   return (
     <div className="footer ">
       <div className="my-container ">
@@ -43,7 +25,7 @@ export default function Footer({
               2021 © Juicy Kicks. All Rights Reserved.
             </p>
           </div>
-          <p className="text-white  text-center py-5">
+          <p className="hidden lg:block text-white  text-center py-5">
             2021 © Juicy Kicks. All Rights Reserved.
           </p>
           <div className="hidden lg:flex text-xs xl:text-base font-bold lg:gap-8 xl:gap-10 items-center">

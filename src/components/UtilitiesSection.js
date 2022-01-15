@@ -57,17 +57,17 @@ export default function UtilitiesSection() {
     setSliderProps({ ...props });
   }, []);
   return (
-    <div className="my-container relative UtilitySection">
+    <div id='utilities' className="my-container relative UtilitySection">
       <Heading>UTILITY of our nft's</Heading>
       <div className="w-full relative z-10">
-        <div id="utilities-next" className="splash-next cursor-pointer">
+        <div id="utilities-next" className="splash-next cursor-pointer  z-10">
           <img
             className="w-1/2 transform rotate-180 invert pr-1"
             src="/imgs/left-arrow.svg"
             alt="next-slide"
           />
         </div>
-        <div id="utilities-prev" className="splash-prev cursor-pointer">
+        <div id="utilities-prev" className="splash-prev cursor-pointer z-10">
           <img
             className="w-1/2 pr-1  invert"
             src="/imgs/left-arrow.svg"

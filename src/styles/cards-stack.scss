@@ -1,0 +1,82 @@
+.cards-stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card-1 {
+    width: 70%;
+    border-radius: 20px;
+    overflow: hidden;
+    // z-index: 7;
+    transition: all 0.4s;
+    position: relative;
+  }
+  .card-inner {
+    position: relative;
+    z-index: 1;
+  }
+  .half-card {
+    z-index: 7;
+
+    clip-path: polygon(0 0, 59% 0, 35% 100%, 0% 100%);
+  }
+  .card {
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    width: 70%;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.4s;
+  }
+  .card_2 {
+    transform: translateX(-50%) translateY(-50%) rotate(6deg);
+    z-index: 2;
+  }
+  .card_3 {
+    z-index: 3;
+    transform: translateX(-50%) translateY(-50%) rotate(12deg);
+  }
+  .card_4 {
+    z-index: 4;
+    transform: translateX(-50%) translateY(-50%) rotate(18deg);
+  }
+  .card_5 {
+    z-index: 5;
+    transform: translateX(-50%) translateY(-50%) rotate(24deg);
+  }
+  .card_6 {
+    z-index: 6;
+    transform: translateX(-50%) translateY(-50%) rotate(30deg);
+  }
+  &:hover {
+    .card-1 {
+      width: 40%;
+      transform: translateY(-50%);
+    }
+    .half-card {
+      z-index: 7;
+      transform: translateX(-50%) translateY(-100%);
+      clip-path: polygon(0 0, 59% 0, 35% 100%, 0% 100%);
+    }
+    .card {
+      width: 40%;
+    }
+    .card_2 {
+      transform: translateX(14%) translateY(-70%) rotate(60deg);
+    }
+    .card_3 {
+      transform: translateX(18%) translateY(-15%) rotate(120deg);
+    }
+    .card_4 {
+      transform: translateX(-50%) translateY(-0%) rotate(180deg);
+    }
+    .card_5 {
+      transform: translateX(-114%) translateY(-15%) rotate(240deg);
+    }
+    .card_6 {
+      transform: translateX(-120%) translateY(-70%) rotate(300deg);
+    }
+  }
+}

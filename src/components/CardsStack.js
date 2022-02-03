@@ -10,9 +10,8 @@ const cards = [
 function CardsStack() {
   return (
     <div className="cards-stack relative">
-      <div className="card-1">
-        <img className="card-inner" src="/imgs/card1.png" alt="card" />
-      </div>
+      <img className="card-1" src="/imgs/card1.png" alt="card" />
+
       <img className="card half-card" src="/imgs/card1.png" alt="card" />
       {cards.map((card, i) => (
         <img className={`card card_${i + 2}`} src={card} alt="card" />

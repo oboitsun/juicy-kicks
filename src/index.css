@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: "Exo", sans-serif !important;
+  font-family: 'Exo', sans-serif !important;
   background: #f1ecdf;
 }
 
@@ -37,5 +37,7 @@ body {
 .faq-divider {
   @apply h-px bg-white w-full  opacity-50 flex-shrink-0;
 }
-
+.z-1 {
+  z-index: 1;
+}
 /*Connect Wallet Section */

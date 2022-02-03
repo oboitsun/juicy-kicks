@@ -6,16 +6,14 @@
     width: 70%;
     border-radius: 20px;
     overflow: hidden;
-    // z-index: 7;
     transition: all 0.4s;
-    position: relative;
   }
   .card-inner {
     position: relative;
     z-index: 1;
   }
   .half-card {
-    z-index: 7;
+    z-index: 12;
 
     clip-path: polygon(0 0, 59% 0, 35% 100%, 0% 100%);
   }
@@ -52,31 +50,33 @@
   }
   &:hover {
     .card-1 {
-      width: 40%;
-      transform: translateY(-50%);
+      transform: translateY(-40%) scale(0.6);
     }
     .half-card {
-      z-index: 7;
-      transform: translateX(-50%) translateY(-100%);
+      z-index: 11;
+      transform: translateX(-50%) translateY(-90%) scale(0.6);
       clip-path: polygon(0 0, 59% 0, 35% 100%, 0% 100%);
     }
     .card {
-      width: 40%;
+      transform-origin: 50% 50%;
     }
     .card_2 {
-      transform: translateX(14%) translateY(-70%) rotate(60deg);
+      transform: translateX(-6%) translateY(-70%) rotate(60deg) scale(0.6);
     }
     .card_3 {
-      transform: translateX(18%) translateY(-15%) rotate(120deg);
+      transform: translateX(-8%) translateY(-15%) rotate(120deg) scale(0.6);
     }
     .card_4 {
-      transform: translateX(-50%) translateY(-0%) rotate(180deg);
+      transform: translateX(-50%) translateY(-0%) rotate(180deg) scale(0.6);
     }
     .card_5 {
-      transform: translateX(-114%) translateY(-15%) rotate(240deg);
+      transform: translateX(-94%) translateY(-15%) rotate(240deg) scale(0.6);
     }
     .card_6 {
-      transform: translateX(-120%) translateY(-70%) rotate(300deg);
+      top: 50%;
+      left: 50%;
+
+      transform: translateX(-100%) translateY(-70%) rotate(300deg) scale(0.6);
     }
   }
 }

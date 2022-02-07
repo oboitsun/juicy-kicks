@@ -47,7 +47,7 @@ export default function AboutUs() {
         </div>
         <div className="lg:w-1/2 pt-40 lg:pt-0 lg:pl-10 xl:pl-0">
           <Heading>
-            About <br /> Juicy kicks
+            10,000 fruit <br /> with kicks
           </Heading>
           <SubHeading>
             8888 Juicy Kicks Living on the Blockchain. What do you get if you

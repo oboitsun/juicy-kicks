@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import TimerCountItem from './TimerCountItem';
+import React, { useEffect, useState } from "react";
+import TimerCountItem from "./TimerCountItem";
 
-import { calculateTimeLeft } from './utils';
+import { calculateTimeLeft } from "./utils";
 export default function Timer() {
   const today = Date.now();
-  const dayX = new Date('February 28, 2022 00:00:00').getTime();
+  const dayX = new Date("May 28, 2022 00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
-    hours: '0',
-    days: '0',
-    minutes: '0',
-    seconds: '0',
+    hours: "0",
+    days: "0",
+    minutes: "0",
+    seconds: "0",
   });
 
   useEffect(() => {

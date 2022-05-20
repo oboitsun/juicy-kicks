@@ -14,7 +14,7 @@ const faqs = [
   {
     qstn: "What Blockhain and technology are Juicy Kicks on?",
     answr:
-      "We have minted the Juicy Kicks on the DFINITY Internet Computer blockchain, in which we believe is perfect for the project. ",
+      "We have minted the Juicy Kicks on the Solana blockchain, in which we believe is perfect for the project. ",
   },
   {
     qstn: "What can I do with my Juicy Kick once purchased?",
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     qstn: "What wallet do I need to be able to connect to buy?",
-    answr: "You can connect using STOIC Wallet or Plug Wallet at this time.",
+    answr: "You can connect using Phantom wallet at this time",
   },
   {
     qstn: "What are the future plans for the Juicy Kicks project?",
@@ -73,9 +73,7 @@ export default function FAQ() {
       <div className="my-container flex flex-col">
         <Heading>FAQ'S</Heading>
         <div className="text-center lg:w-4/5 mx-auto">
-          <SubHeading>
-            Some answers to some of the questions you may have
-          </SubHeading>
+          <SubHeading>Some answers to some of the questions you may have</SubHeading>
         </div>
         <div className="grid lg:grid-cols-2 gap-x-5 text-white">
           <div className="faq-divider"></div>

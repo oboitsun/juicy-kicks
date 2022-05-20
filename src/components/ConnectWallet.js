@@ -92,7 +92,7 @@ function ConnectWallet({
               <button className={"btn"}>Connect Wallet</button>
             </PopoverTrigger>
             <Portal>
-              <PopoverContent className="pop-over">
+              {/* <PopoverContent className="pop-over">
                 <PopoverBody>
                   <Button
                     className="wallet-connect-button"
@@ -118,7 +118,7 @@ function ConnectWallet({
                     Connect with Earth
                   </Button>
                 </PopoverBody>
-              </PopoverContent>
+              </PopoverContent> */}
             </Portal>
           </Popover>
         ) : (

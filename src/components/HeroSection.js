@@ -4,12 +4,7 @@ import WelcomeTo from "./WelcomeTo";
 import { motion } from "framer-motion";
 import SplashCarousel from "./SplashCarousel";
 import Cards1Back from "./Cards1Back";
-export default function HeroSection({
-  showPopup,
-  setShowPopup,
-  userAddress,
-  setUserAddress,
-}) {
+export default function HeroSection({ showPopup, setShowPopup, userAddress, setUserAddress }) {
   return (
     <motion.div
       id="hero-section"
@@ -34,11 +29,7 @@ export default function HeroSection({
         alt="card"
       />
       <div className=" hero-section-net">
-        <img
-          className=" w-full absolute  object-cover "
-          src="/imgs/bottom-bg.png"
-          alt="bg"
-        />
+        <img className=" w-full absolute  object-cover " src="/imgs/bottom-bg.png" alt="bg" />
       </div>
 
       <div className="my-container relative z-10  lg:flex lg:justify-between">
@@ -50,7 +41,7 @@ export default function HeroSection({
         />
         <div className="relative z-10 splash ">
           <SplashCarousel />
-          <div className="burst">
+          <div className="burst pointer-events-none">
             <motion.img
               animate={{
                 scale: [1, 1.05, 0.9, 1],

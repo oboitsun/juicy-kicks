@@ -11,6 +11,7 @@ const splash_array = [
   "/imgs/splash5.png",
   "/imgs/splash6.png",
   // "/imgs/splash7.png",
+  "/imgs/splash77.png",
   "/imgs/splash8.png",
   "/imgs/splash9.png",
   "/imgs/splash10.png",
@@ -28,10 +29,10 @@ export default function SplashCarousel() {
         />
       </div>
       <div id="splash-prev" className="splash-prev cursor-pointer">
-        <img className="w-1/2 pr-1  invert" src="/imgs/left-arrow.svg" alt="next-slide" />
+        <img className="w-1/2 pr-1 invert" src="/imgs/left-arrow.svg" alt="next-slide" />
       </div>
       <Swiper
-        // autoplay={{ delay: 2500 }}
+        autoplay={{ delay: 2500 }}
         loop={true}
         centeredSlides
         navigation={{ nextEl: "#splash-next", prevEl: "#splash-prev" }}

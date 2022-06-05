@@ -4,13 +4,13 @@ import "swiper/swiper.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 const splash_array = [
-  "/imgs/splash.png",
+  // "/imgs/splash.png",
   "/imgs/splash2.png",
   "/imgs/splash3.png",
   "/imgs/splash4.png",
   "/imgs/splash5.png",
   "/imgs/splash6.png",
-  "/imgs/splash7.png",
+  // "/imgs/splash7.png",
   "/imgs/splash8.png",
   "/imgs/splash9.png",
   "/imgs/splash10.png",
@@ -31,7 +31,7 @@ export default function SplashCarousel() {
         <img className="w-1/2 pr-1  invert" src="/imgs/left-arrow.svg" alt="next-slide" />
       </div>
       <Swiper
-        autoplay={{ delay: 2500 }}
+        // autoplay={{ delay: 2500 }}
         loop={true}
         centeredSlides
         navigation={{ nextEl: "#splash-next", prevEl: "#splash-prev" }}

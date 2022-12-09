@@ -2,20 +2,15 @@ import React from "react";
 import Logo from "./Logo";
 import "../styles/footer.scss";
 import Socials from "./Socials";
+import ChainStormLogo from "./ChainStormLogo";
 
-export default function Footer({
-  showPopup,
-  setShowPopup,
-  userAddress,
-  setUserAddress,
-}) {
-
+export default function Footer({ showPopup, setShowPopup, userAddress, setUserAddress }) {
   return (
     <div className="footer ">
       <div className="my-container ">
         <div className="w-full justify-center flex-col flex items-center">
           <div className="flex flex-col items-center ">
-            <Logo wide={false} />
+            <ChainStormLogo wide={false} />
             <div className="lg:hidden pt-5">
               {" "}
               <Socials big />
